@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  api:
+    container_name: sem-wiki-web-api
+    image: sem-wiki-api-image
+    build: 
+      context: ./embapi/
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    restart: always
+
+  view:
+    container_name: sem-wiki-web-view
+    image: sem-wiki-view-image
+    build: 
+      context: ./web-view/
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    restart: always

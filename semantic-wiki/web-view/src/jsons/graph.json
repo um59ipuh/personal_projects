@@ -1,0 +1,9 @@
+
+
+ [
+    { "data": { "id": "one", "label": "Node 1", "url": "https://www.youtube.com/" } },
+    { "data": { "id": "two", "label": "Node 2" } },
+    { "data": { "id": "three", "label": "Node 3" } },
+    { "data": { "source": "one", "target": "two", "label": "XOR" } },
+    { "data": { "source": "one", "target": "three", "label": "Edge from Node1 to Node3" } }
+ ]
